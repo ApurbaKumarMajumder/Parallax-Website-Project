@@ -10,7 +10,7 @@
     /* overflow-y: auto;
     overflow-x: hidden; */
     overflow: hidden auto;
-    perspective: 100px;
+    perspective: 10px;
 }
 
 .container {
@@ -33,8 +33,19 @@
 
 .background, .foreground {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     object-fit: cover;
     z-index: -1;
+}
+
+h1 {
+    position: absolute ;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
