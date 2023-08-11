@@ -4,3 +4,37 @@
     box-sizing: border-box;
 }
 
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    overflow: hidden auto;
+    perspective: 100px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
